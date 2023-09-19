@@ -5,4 +5,5 @@ include(
     "storage",
 
     "clients:client-common",
+    "clients:client-example"
 )

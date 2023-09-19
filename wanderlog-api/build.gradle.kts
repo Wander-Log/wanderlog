@@ -6,6 +6,7 @@ dependencies {
     implementation(project(":storage"))
 
     implementation(project(":clients:client-common"))
+    implementation(project(":clients:client-example"))
 
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
