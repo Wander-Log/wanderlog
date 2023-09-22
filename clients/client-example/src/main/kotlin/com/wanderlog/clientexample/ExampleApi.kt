@@ -11,7 +11,7 @@ internal interface ExampleApi {
     @GetMapping(
         value = ["/some-endpoint"],
         produces = [MediaType.APPLICATION_JSON_VALUE],
-        consumes = [MediaType.APPLICATION_JSON_VALUE]
+        consumes = [MediaType.APPLICATION_JSON_VALUE],
     )
     fun someEndpoint(exampleSomeRequest: ExampleSomeRequest): ExampleSomeResponse
 }

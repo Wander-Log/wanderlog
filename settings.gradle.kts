@@ -4,7 +4,6 @@ include(
     "wanderlog-api",
     "common",
     "storage",
-
     "clients:client-common",
-    "clients:client-example"
+    "clients:client-example",
 )

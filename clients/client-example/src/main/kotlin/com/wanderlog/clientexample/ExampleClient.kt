@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component
 
 @Component
 class ExampleClient internal constructor(
-    private val exampleApi: ExampleApi
+    private val exampleApi: ExampleApi,
 ) {
     fun someRequest(someField: String): ExampleSomeResponse {
         val request = ExampleSomeRequest(someField)
