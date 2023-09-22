@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class WanderlogApiApplication
 
 fun main(args: Array<String>) {
-    runApplication<WanderlogApiApplication>(*args)
+        runApplication<WanderlogApiApplication>(*args)
 }
