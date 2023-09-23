@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id("org.springframework.boot") version "3.1.3"
     id("io.spring.dependency-management") version "1.1.3"
-    id("org.jmailen.kotlinter") version "3.2.0"
+    id("org.jlleitschuh.gradle.ktlint") version "11.6.0"
     kotlin("jvm") version "1.8.22"
     kotlin("plugin.spring") version "1.8.22"
 }
@@ -34,7 +34,7 @@ subprojects {
     apply(plugin = "org.jetbrains.kotlin.plugin.spring")
     apply(plugin = "org.springframework.boot")
     apply(plugin = "io.spring.dependency-management")
-    apply(plugin = "org.jmailen.kotlinter")
+    apply(plugin = "org.jlleitschuh.gradle.ktlint")
 
     tasks.getByName("bootJar") {
         enabled = false

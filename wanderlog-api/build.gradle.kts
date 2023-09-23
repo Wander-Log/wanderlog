@@ -3,6 +3,7 @@ tasks.getByName("bootJar") {
 }
 
 dependencies {
+    implementation(project(":common"))
     implementation(project(":storage"))
 
     implementation(project(":clients:client-common"))

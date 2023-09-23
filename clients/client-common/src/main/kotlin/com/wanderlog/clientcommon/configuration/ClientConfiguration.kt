@@ -5,5 +5,4 @@ import org.springframework.context.annotation.Configuration
 
 @EnableFeignClients
 @Configuration
-class ClientConfiguration {
-}
+class ClientConfiguration
