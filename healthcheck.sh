@@ -1,7 +1,7 @@
 
 nohup java -jar wanderlog-api/build/libs/*.jar &
 
-for retry_count in \$(seq 10)
+for retry_count in $(seq 10)
 do
   if curl -s "http://localhost:8080/health" > /dev/null
   then

@@ -25,10 +25,10 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew :wanderlog-api:build
 
-      - name: permission for health check
+      - name: Permission for health check
         run: chmod +x ./healthcheck.sh
 
-      - name: App boot
+      - name: Boot and Health check
         run: ./healthcheck.sh
 
 
