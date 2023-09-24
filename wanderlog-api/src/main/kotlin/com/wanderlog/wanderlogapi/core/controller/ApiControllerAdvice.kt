@@ -16,7 +16,7 @@ class ApiControllerAdvice {
     @ExceptionHandler(Exception::class)
     fun handleException(
         e: Exception,
-        request: HttpServletRequest
+        request: HttpServletRequest,
     ): ResponseEntity<ApiResponse<Any>> {
         val errorType = ErrorType.COMMON_ERROR
         log.error("Exception : {}", e.message, e)
