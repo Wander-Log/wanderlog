@@ -25,6 +25,7 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew :wanderlog-api:build
 
-      - name: App boot test
-        run: java -jar wanderlog-api/build/libs/*.jar
+      - name: App boot
+        run: ./healthcheck.sh
+
 
