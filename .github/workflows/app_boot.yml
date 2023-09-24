@@ -23,8 +23,8 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build with Gradle
-        uses: ./gradlew :wanderlog-api:build
+        run: ./gradlew :wanderlog-api:build
 
       - name: App boot test
-        uses: java -jar wanderlog-api/build/libs/*.jar
+        run: java -jar wanderlog-api/build/libs/*.jar
 
