@@ -1,5 +1,5 @@
 
-java -jar wanderlog-api/build/libs/*.jar
+nohup java -jar wanderlog-api/build/libs/*.jar &
 
 for retry_count in \$(seq 10)
 do
