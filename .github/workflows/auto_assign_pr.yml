@@ -11,4 +11,4 @@ jobs:
         with:
           configuration-path: '.github/auto_assign_pr_config.yml'
           repo-token: '${{ secrets.github_token }}'
-          assignee: ${{ github.event.pull_request.user.login }}
+
